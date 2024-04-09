@@ -1,0 +1,242 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_direccion",
+						"type": "address"
+					}
+				],
+				"name": "agregarAListaBlanca",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					}
+				],
+				"name": "agregarPropuesta",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_direccion",
+						"type": "address"
+					}
+				],
+				"name": "eliminarDeListaBlanca",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_direccion",
+						"type": "address"
+					}
+				],
+				"name": "estaEnListaBlanca",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "haTerminadoPeriodoVotacion",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "longitudActivosListaBlanca",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "obtenerCantidadPropuestas",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_indice",
+						"type": "uint256"
+					}
+				],
+				"name": "obtenerPropuesta",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "todasLasPropuestas",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "nombre",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "cantidadVotos",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct ContratoVotacion.Propuesta[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "nuevaDireccionPropietario",
+						"type": "address"
+					}
+				],
+				"name": "transferirPropiedad",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_indicePropuesta",
+						"type": "uint256"
+					}
+				],
+				"name": "votar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_direccion",
+						"type": "address"
+					}
+				],
+				"name": "yaVotaron",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Votingcontract.sol": "ContratoVotacion"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Votingcontract.sol": {
+			"keccak256": "0xc8ff98a8f041b3519c43bcaa9fd847f4ff8169afe5ddc62a7a2ff699284ba8c9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ea5f3468e0289a45581c2cb143be105032c20b4805dbb5177b58294ee6b78e97",
+				"dweb:/ipfs/QmcWGTugdcj72TZ4uERadUqfhG6GhFR6wnuDMbDG7tUg55"
+			]
+		}
+	},
+	"version": 1
+}
